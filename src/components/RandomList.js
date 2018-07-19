@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, ListItem, Avatar} from 'material-ui';
+import { List, ListItem, Avatar} from '@material-ui/core/';
 import * as IchingTable from '../constants/lookup.js';
 import { HexagramImage } from './HexagramImage';
 import { withRouter } from 'react-router-dom';

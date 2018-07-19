@@ -1,4 +1,4 @@
-View example here https://richcostello.github.io/react-iching-mui
+View example here https://richcostello.github.io/savvywise
 
 To Install depencies:   yarn install
 

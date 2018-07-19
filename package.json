@@ -1,5 +1,5 @@
 {
-  "name": "react-iching-mui",
+  "name": "savvywise",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://richcostello.github.io/savvywise/",
@@ -125,5 +125,4 @@
   "eslintConfig": {
     "extends": "react-app"
   }
- 
 }
