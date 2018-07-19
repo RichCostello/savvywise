@@ -159,7 +159,7 @@ class PermanentDrawer extends React.Component {
              <Route  exact  path={`/home`}component={HomePage}/>
              <Route  exact  path={`/details/:number/:name`} component={DetailPage} />
              <Route  exact  path={`/portal/:number/:name`}  component={PortalPageContainer}/>
-             <Redirect from="/react-iching-mui" exact to="/home" />
+             <Redirect from="/savvywise" exact to="/home" />
              </Switch>
              </div>
              </CSSTransition>
