@@ -2,8 +2,7 @@ import React from 'react';
 import * as _ from 'lodash';
 import * as IchingTable from '../constants/lookup.js';
 import HexagramInfoCard from './HexagramInfoCard';
-import ModalContainer from './modal_components/ModalContainer';
-import { Divider } from 'material-ui';
+import { Divider } from '@material-ui/core/';
 import { Accordion, Icon, Segment, Label } from 'semantic-ui-react'
 import { Switch, Route, Link, Redirect, withRouter } from "react-router-dom";
 

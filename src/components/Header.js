@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import * as HexagramActions from '../actions/HexagramActions.js';
 import { AppBar, Card, CardHeader, CardTitle, CardText, Avatar, Icons, FlatButton, IconButton, FontIcon, Styles, Toolbar, Typography} from 'material-ui';
 import PropTypes from 'prop-types';
-import MenuIcon from 'material-ui-icons/Menu';
-import { withStyles } from 'material-ui/styles';
-import ArrowBack from 'material-ui-icons/ArrowBack';
+import MenuIcon from '@material-ui/core/Menu';
+import { withStyles } from '@material-ui/core/styles';
+import ArrowBack from '@material-ui/core/ArrowBack';
 import { Link } from 'react-router-dom';
 
 const drawerWidth = 300;

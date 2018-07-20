@@ -1,6 +1,6 @@
 import React from 'react'
-import TextField from 'material-ui/TextField'
-import IconButton from 'material-ui/IconButton'
+import TextField from '@material-ui/core/TextField'
+import IconButton from '@material-ui/core/IconButton'
 import Search from '@material-ui/icons/Search';
 import PropTypes from 'prop-types';
   

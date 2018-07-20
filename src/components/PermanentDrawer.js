@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/material-ui/styles';
 import { Drawer, AppBar, Toolbar, Typography, IconButton, Hidden } from '@material-ui/core/';
-import MenuIcon from 'material-ui-icons/Menu';
+import MenuIcon from '@material-ui/icons/Menu';
 import ListPage from './ListPage';
 import HomePage from './HomePage';
 import { Switch, Route, Link, Redirect } from "react-router-dom";

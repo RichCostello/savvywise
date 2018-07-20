@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { withStyles } from 'material-ui/styles';
+import { withStyles } from '@material-ui/core/styles';
 
 import DefaultList from './DefaultList';
 import ReverseList from './ReverseList';
 import RandomList from './RandomList';
-import Switch from 'material-ui/Switch';
+import Switch from '@material-ui/core/Switch';
 
 const styles = theme => ({
     button: {
