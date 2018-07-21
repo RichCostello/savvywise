@@ -206,7 +206,12 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"folly"},
+            {"id": 2, "label":"ignorance"},
+            {"id": 3, "label":"youth"},
+            {"id": 4, "label":"rumspringa"},
+            {"id": 5, "label":"enveloping"},
+            {"id": 6, "label":"fool"}
         ]
     },
     {
@@ -255,7 +260,10 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"waiting"},
+            {"id": 2, "label":"moistened"},
+            {"id": 3, "label":"arriving"},
+            {"id": 4, "label":"nourishment"}
         ]
     },
     {
