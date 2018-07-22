@@ -5,7 +5,7 @@ import * as _ from 'lodash';
 
 
 const PortalPageContainer = ({match}) => {
-  
+    
 
     let hexNumber = _.toNumber( match.params.number );
       let hex      = IchingTable.getHexagram( hexNumber );

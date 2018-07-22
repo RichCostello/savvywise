@@ -59,13 +59,21 @@ class ImageCard extends React.Component {
         this.state = { 
           loading: true,
           open: false,
-          imageStatus: "loading", 
           errored: false
         }
       }
       componentDidMount() {
-        setTimeout(() => this.setState({ loading: false }), 2500); // simulates an async action, and hides the spinner
+        
+        this.timerHandle = setTimeout(() => this.setState({ loading: false }), 3500); // simulates an async action, and hides the spinner
       }
+
+      componentWillUnmount(){
+        if (this.timerHandle) {
+          clearTimeout(this.timerHandle);
+          this.timerHandle = 0;
+        }
+      }
+      
       //handles open close of modal
       handleOpen = () => {
         this.setState({ open: true });

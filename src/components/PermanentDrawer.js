@@ -79,8 +79,14 @@ class PermanentDrawer extends React.Component {
   }
 
   componentDidMount() {
+    clearInterval(this.props.location)
     setTimeout(() => this.setState({ loading: false}), 1500);
   }
+  componentWillUnmount() {
+    clearInterval(this.props.location)
+  }
+
+
 
   handleDrawerToggle = () => {
     this.setState({ mobileOpen: !this.state.mobileOpen });
