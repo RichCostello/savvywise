@@ -34,7 +34,7 @@ const styles = theme => ({
       case 0:
         return `Toggling the Reverse Hexes or Random Hexes buttons, re-arranges the order of the Hexes.  Select a Hexagram from the list in the left column and click on it. This will take you to the detail page.`;
       case 1:
-        return 'This Page give you details on the meanings of each Hexagram. Click on the Orange button on the top right to go to the Search Portal Page.';
+        return 'This Page gives you details on the meanings of each Hexagram. Click on the Orange button on the top right to go to the Search Portal Page.';
       case 2:
         return `This page extracts keywords from the Details page and queries them on the Imgur API.  Click on a Label tag for each
         key word which returns meme content from the Imgur API for that tag.  Click on an image to get a close up of it. Click the orange Back button to return back to the details page.`;
