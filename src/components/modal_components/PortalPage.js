@@ -25,14 +25,11 @@ class PortalPage extends React.Component {
     
   }  
   componentDidMount() {
-    clearInterval( this.props.searchImages(query))
+   
     let query = this.props.hexagram.tags[0].label 
     this.props.searchImages(query)
   }
-  componentWillUnmount() {
-    let query = this.props.hexagram.tags[0].label 
-    clearInterval( this.props.searchImages(query))
-  }
+
 
  
  
