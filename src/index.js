@@ -5,9 +5,10 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider  } from 'react-redux';
 import thunk from 'redux-thunk';
 import invariant from 'redux-immutable-state-invariant';
+import { composeWithDevTools } from 'redux-devtools-extension'
 import createBrowserHistory from 'history/createBrowserHistory'
 import { Router, Route, Switch } from 'react-router-dom';
-import rootReducer from './reducers/rootReducer'
+import allReducers from './reducers/index';
 import './styles/index.css';
 import PermanentDrawer from './components/PermanentDrawer';
 import DetailPage from './components/DetailPage';
@@ -26,17 +27,7 @@ const theme = createMuiTheme({
 
 const history = createBrowserHistory()
 
-function configureStore( initialState ) {
-  let fCreateStore = compose(
-    applyMiddleware( invariant(), thunk ),
-    window.devToolsExtension ? window.devToolsExtension() : f => f
-  )(createStore);
-
-  const store = fCreateStore(rootReducer);
-
-  return store;
-}
-let store = window.store = configureStore();
+const store = createStore(allReducers, composeWithDevTools(applyMiddleware(thunk)))
 
 
 ReactDOM.render(

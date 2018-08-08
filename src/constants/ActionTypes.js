@@ -6,3 +6,6 @@ export const HEXAGRAM_GENERATED = 'HEXAGRAM_GENERATED';
 export const HEXAGRAM_CLEAR = 'HEXAGRAM_CLEAR';
 
 export const REACT_APP_CLIENT_ID= 'Client-ID c58105c1612ff18';
+
+const PAGE_SIZE = 3;
+

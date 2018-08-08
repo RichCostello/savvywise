@@ -1,7 +1,12 @@
-
+import { createSelector } from 'reselect';
 
 import { REACT_APP_CLIENT_ID } from '../constants/ActionTypes';
-  
+
+
+
+
+//ACTIONS
+  //IMGUR API
   export function searchImages(query) {
     const data = {
       method: 'GET',
@@ -10,7 +15,7 @@ import { REACT_APP_CLIENT_ID } from '../constants/ActionTypes';
         'Accept': "application/json",
         'Authorization': REACT_APP_CLIENT_ID
       }
-    }
+    };
     return (dispatch) => {
       dispatch(requestImages(query))
       fetch(`https://api.imgur.com/3/gallery/search/time/all/0?q=${query}&q_type=png&q_type=album`, data)
@@ -23,16 +28,12 @@ import { REACT_APP_CLIENT_ID } from '../constants/ActionTypes';
   
   }
 
-  export function requestImages(query) {
+  function requestImages(query) {
     return (dispatch) => {
       dispatch({type: "REQUEST_IMAGES"}),
       query
     }
   }
+  
 
   
-  export function invalidateImage(query) {
-    return (dispatch) => {
-      dispatch({type: "INVALIDATE_IMAGE"})
-    }
-  }

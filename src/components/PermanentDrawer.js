@@ -8,7 +8,7 @@ import ListPage from './ListPage';
 import HomePage from './HomePage';
 import { Switch, Route, Link, Redirect } from "react-router-dom";
 import DetailPage from './DetailPage';
-import PortalPageContainer from './modal_components/PortalPageContainer';
+import PortalPageContainer from './portal_components/PortalPageContainer';
 import AppBarHex from './AppBarHex';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import * as injectTapEventPlugin from 'react-tap-event-plugin';

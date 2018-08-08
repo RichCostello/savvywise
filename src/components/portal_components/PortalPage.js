@@ -16,33 +16,22 @@ class PortalPage extends React.Component {
 
   constructor(props) {
     super(props);
-    
     this.state = {
       open: false,
       selectedTabId: 1,
       intervalId: null
-    }
-    
+    }  
   }  
   componentDidMount() {
-   
     let query = this.props.hexagram.tags[0].label 
     this.props.searchImages(query)
   }
 
-
- 
- 
-
-
   detailsback(hex) {
-    
     this.props.history.push( `/details/${hex.number}/${hex.name}` );
     this.props;
     console.log("this is the bar hex");
-    
   }
-  
   
   labelClick = (label, event, selectedTabId, id) => {
     event.preventDefault();
@@ -85,7 +74,6 @@ class PortalPage extends React.Component {
       
     return (
       <div>
-
           <Segment raised>
           <Label
             as='a'
@@ -101,20 +89,17 @@ class PortalPage extends React.Component {
             <div className="title">
               <h3>{number}: {name}</h3>
               <h2>{description}</h2>
-            </div>
-            
+            </div> 
           </div>
           </Segment>
-         
             <div>
             <p>Click on search terms for </p><h4>{name} - {description} </h4>
-             {searchtags}
-             
+             {searchtags}   
             </div>
           <div>
             <ImageContainer filtered={this.props.filtered} />
-          </div>
-         
+          </div> 
+          
       </div>
     );
   }
@@ -122,7 +107,7 @@ class PortalPage extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    filtered: state.filtered
+    filtered: state.filtered,
   }
 }
 
