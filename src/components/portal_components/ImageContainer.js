@@ -1,7 +1,7 @@
 import React from 'react'
 import ImageCard from './ImageCard'
 import ContentLoader from 'react-content-loader'
-
+import $ from 'jquery';
 
 class ImageContainer extends React.Component {
   constructor(props) {
@@ -12,8 +12,7 @@ class ImageContainer extends React.Component {
 			i: 0
 		}
   }
-  
-
+ 
  
   render() {
     let startItemOfPage = 6 * this.state.id
@@ -30,13 +29,13 @@ class ImageContainer extends React.Component {
       <div className="image-wrapper">
         {allImages}
       </div>
-      <div className='products-list-buttons-container'>
-        <a onClick={() => this.setState({i: this.state.i + 1})} className='button is-dark'>more</a>
-			</div>
       <div className="note">
-              {allImages.length === 0 ? "No search results" : ""}
-              
+              {allImages.length === 0 ? <p id="morebut">No search results</p> : ""}   
        </div>
+      <div className='products-list-buttons-container'>
+        {allImages.length ? <a onClick={() => this.setState({i: this.state.i + 1})} className='button is-dark'>more</a> : ""}
+			</div>
+      
        
       </div>
     )
