@@ -2,17 +2,17 @@ import React from 'react'
 import { Label } from 'semantic-ui-react'
 import * as IchingTable from '../../constants/lookup.js';
 import { HexagramImage } from '../HexagramImage.js';
-import * as pictureActions from '../../actions/pictures'
+import * as gifActions from '../../actions/giphyActions';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import ImageContainer from './ImageContainer.js';
+import GifImageContainer from './GifImageContainer.js';
 import ReactDOM from 'react-dom'
 import classnames from 'classnames';
 import { Segment } from 'semantic-ui-react'
 import { NavLink, withRouter} from 'react-router-dom';
+import ApiSelector from '../ApiSelector';  
 
-
-class PortalPage extends React.Component {
+class GiphyPortal extends React.Component {
 
   constructor(props) {
     super(props);
@@ -24,7 +24,8 @@ class PortalPage extends React.Component {
   }  
   componentDidMount() {
     let query = this.props.hexagram.tags[0].label 
-    this.props.searchImages(query)
+    this.props.searchGiphy(query)
+    console.log(this.props)
   }
 
   detailsback(hex) {
@@ -36,11 +37,12 @@ class PortalPage extends React.Component {
   labelClick = (label, event, selectedTabId, id) => {
     event.preventDefault();
     let query = event.target.innerText;    
-    const { searchImages } = this.props
-    searchImages(query);
+    const { searchGiphy } = this.props
+    searchGiphy(query);
     this.setState({ selectedTabId : label.id });
   }
   render() {
+    console.log(this.props.searchGiphy)
     let hexNumber = Number( this.props.match.params.number );
     let hex  = IchingTable.getHexagram( hexNumber );
     let {trigrams, name, number, description, tags, selectedTabId} = this.props.hexagram;
@@ -90,14 +92,15 @@ class PortalPage extends React.Component {
               <h3>{number}: {name}</h3>
               <h2>{description}</h2>
             </div> 
+            <ApiSelector/>
           </div>
           </Segment>
             <div>
-            <p>Click on search terms for </p><h4>{name} - {description} </h4>
+            <p>Click on key words to search Giphy Gifs</p>
              {searchtags}   
             </div>
           <div>
-            <ImageContainer filtered={this.props.filtered} />
+            <GifImageContainer giphied={this.props.giphied} />
           </div> 
           
       </div>
@@ -107,12 +110,12 @@ class PortalPage extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    filtered: state.filtered,
+    giphied: state.giphied,
   }
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators(pictureActions, dispatch)
+  return bindActionCreators(gifActions, dispatch)
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(PortalPage))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(GiphyPortal))

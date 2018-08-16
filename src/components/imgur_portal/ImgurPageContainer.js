@@ -1,10 +1,10 @@
 import React from 'react';
 import * as IchingTable from '../../constants/lookup.js';
-import PortalPage from   "./PortalPage";
+import ImgurPage from   "./ImgurPage";
 import * as _ from 'lodash';
 
 
-const PortalPageContainer = ({match}) => {
+const ImgurPageContainer = ({match}) => {
     
 
     let hexNumber = _.toNumber( match.params.number );
@@ -16,10 +16,13 @@ const PortalPageContainer = ({match}) => {
       }
 
       return (
-          <div>
-        <PortalPage  hexagram={hex} trigrams/>
+    
+        <div>
+        <ImgurPage  hexagram={hex} trigrams/>
+       
         </div>
+  
       );
 };
 
-export default PortalPageContainer;
+export default ImgurPageContainer;

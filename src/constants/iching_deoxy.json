@@ -54,7 +54,8 @@
             {"id": 3, "label":"perseverance"},
             {"id": 4, "label":"sublime"},
             {"id": 5, "label":"primal"},
-            {"id": 6, "label":"heaven"}
+            {"id": 6, "label":"heaven"},
+            {"id": 7, "label":"hidden dragon"}
         ]
     },
     {
@@ -107,6 +108,7 @@
             {"id": 2, "label": "acquiescence"},
             {"id": 3, "label": "flow"},
             {"id": 4, "label": "earth"}
+            
         ]
     },
     {

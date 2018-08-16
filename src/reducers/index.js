@@ -2,10 +2,14 @@
 
 import { combineReducers } from 'redux';
 import {Filt} from './filtered';
+import {Giph} from './giphied';
+import imageUrls from './imageUrls'
 
 
-const allReducders = combineReducers({
-  filtered: Filt
+const allReducers = combineReducers({
+  filtered: Filt,
+  giphied: Giph
+
 })
 
-export default allReducders
+export default allReducers

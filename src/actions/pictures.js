@@ -1,7 +1,6 @@
 import { createSelector } from 'reselect';
 
-import { REACT_APP_CLIENT_ID } from '../constants/ActionTypes';
-
+import { REACT_APP_CLIENT_ID_IMGUR } from '../constants/ActionTypes';
 
 
 
@@ -13,7 +12,7 @@ import { REACT_APP_CLIENT_ID } from '../constants/ActionTypes';
       headers: {
         'Content-Type': 'application/json',
         'Accept': "application/json",
-        'Authorization': REACT_APP_CLIENT_ID
+        'Authorization': REACT_APP_CLIENT_ID_IMGUR
       }
     };
     return (dispatch) => {
@@ -34,6 +33,9 @@ import { REACT_APP_CLIENT_ID } from '../constants/ActionTypes';
       query
     }
   }
+
+
+
   
 
   

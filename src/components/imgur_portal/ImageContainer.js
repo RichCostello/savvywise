@@ -1,17 +1,17 @@
 import React from 'react'
 import ImageCard from './ImageCard'
-import ContentLoader from 'react-content-loader'
-import $ from 'jquery';
+//import ContentLoader from 'react-content-loader'
+
 
 class ImageContainer extends React.Component {
   constructor(props) {
 		super(props);
 
 		this.state = {
-      //selectedProducts: [],
-			i: 0
+      i:0
 		}
   }
+ 
  
  
   render() {

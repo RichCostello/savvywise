@@ -4,7 +4,6 @@ import * as IchingTable from '../constants/lookup.js';
 import HexagramInfoCard from './HexagramInfoCard';
 import { Divider } from '@material-ui/core/';
 import { Accordion, Icon, Segment, Label } from 'semantic-ui-react'
-import { Switch, Route, Link, Redirect, withRouter } from "react-router-dom";
 
 
 
@@ -21,7 +20,7 @@ class DetailPage extends React.Component{
 
   searchport(hex) {
     
-    this.props.history.push( `/portal/${hex.number}/${hex.name}` );
+    this.props.history.push( `/imgur/${hex.number}/${hex.name}` );
     this.props;
     console.log("this is the bar hex");
     
@@ -59,8 +58,7 @@ class DetailPage extends React.Component{
             color='orange'
             >
             Search Portal
-            </Label> 
-            
+            </Label>
           <HexagramInfoCard hexagram={hex} />
          </Segment> 
             <div className="interpretation">

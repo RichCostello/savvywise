@@ -1,4 +1,5 @@
-const initialState = { filtered: [], images:[]}
+const initialState = { filtered: [], giphied: [], images:[], gifs:[]}
+
 
 export function Filt (state = initialState, action) {
   
@@ -9,7 +10,16 @@ export function Filt (state = initialState, action) {
       return {
          ...state, images: action.payload, filtered, isFetching: false
       };
+      
+      case "SEARCH_GIFS":
+      let giphied = action.payload;
+      return {
+         ...state, gifs: action.payload, giphied, isFetching: false
+      };
       default:
       return state
     }
 }
+
+
+

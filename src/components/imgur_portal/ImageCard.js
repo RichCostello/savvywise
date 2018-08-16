@@ -1,5 +1,5 @@
 import React from 'react'
-import MyBulletListLoader from './BulletList'
+import MyBulletListLoader from '../BulletList'
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';

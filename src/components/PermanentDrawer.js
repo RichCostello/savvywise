@@ -8,7 +8,8 @@ import ListPage from './ListPage';
 import HomePage from './HomePage';
 import { Switch, Route, Link, Redirect } from "react-router-dom";
 import DetailPage from './DetailPage';
-import PortalPageContainer from './portal_components/PortalPageContainer';
+import ImgurPageContainer from './imgur_portal/ImgurPageContainer';
+import GiphyPageContainer from './giphy_portal/GiphyPageContainer';
 import AppBarHex from './AppBarHex';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import * as injectTapEventPlugin from 'react-tap-event-plugin';
@@ -86,6 +87,7 @@ class PermanentDrawer extends React.Component {
     clearInterval(this.props.location)
   }
 
+ 
 
 
   handleDrawerToggle = () => {
@@ -125,7 +127,8 @@ class PermanentDrawer extends React.Component {
               <Link to="/">SavvyWise Iching</Link>
               </Typography>
             <Route  exact  path={`/details/:number/:name`} render={(props) => ( <AppBarHex {...props} /> )}/>
-            <Route  exact  path={`/portal/:number/:name`} render={(props) => ( <AppBarHex {...props} /> )}/>
+            <Route  exact  path={`/imgur/:number/:name`} render={(props) => ( <AppBarHex {...props} /> )}/>
+            <Route  exact  path={`/giphy/:number/:name`} render={(props) => ( <AppBarHex {...props} /> )}/>
             </Toolbar>
       
           </AppBar>
@@ -164,7 +167,8 @@ class PermanentDrawer extends React.Component {
              <Route  exact  path={`/`}component={HomePage}/>
              <Route  exact  path={`/home`}component={HomePage}/>
              <Route  exact  path={`/details/:number/:name`} component={DetailPage} />
-             <Route  exact  path={`/portal/:number/:name`}  component={PortalPageContainer}/>
+             <Route  exact  path={`/imgur/:number/:name`}  component={ImgurPageContainer}/>
+             <Route  exact  path={`/giphy/:number/:name`}  component={GiphyPageContainer}/>
              <Redirect from="/savvywise" exact to="/home" />
              </Switch>
              </div>
