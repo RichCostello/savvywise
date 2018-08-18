@@ -3,18 +3,16 @@ import ReactDOM from 'react-dom';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider  } from 'react-redux';
-import thunk from 'redux-thunk';
-import invariant from 'redux-immutable-state-invariant';
-import { composeWithDevTools } from 'redux-devtools-extension'
+import configureStore from './store/configureStore'
 import createBrowserHistory from 'history/createBrowserHistory'
 import { Router, Route, Switch } from 'react-router-dom';
-import allReducers from './reducers/index';
 import './styles/index.css';
 import PermanentDrawer from './components/PermanentDrawer';
 import DetailPage from './components/DetailPage';
 import registerServiceWorker from './registerServiceWorker';
 import orange from '@material-ui/core/colors/orange';
 import green from '@material-ui/core/colors/green';
+import { getTrendingGifsStarted } from './actions/giphyActions';
 
 
 const theme = createMuiTheme({
@@ -25,9 +23,19 @@ const theme = createMuiTheme({
   
 });
 
+const initialState = {
+  searchTerm: '',
+  searchError: '',
+  gifsRequired: 5,
+  loadedGifList: [],
+  loadingError: '',
+  loadingStatus: false
+}
+
 const history = createBrowserHistory()
 
-const store = createStore(allReducers, composeWithDevTools(applyMiddleware(thunk)))
+const store = configureStore(initialState);
+//store.dispatch(getTrendingGifsStarted());
 
 
 ReactDOM.render(

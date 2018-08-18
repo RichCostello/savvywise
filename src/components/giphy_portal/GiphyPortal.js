@@ -6,6 +6,7 @@ import * as gifActions from '../../actions/giphyActions';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import GifImageContainer from './GifImageContainer.js';
+import { Loading } from './Loading'
 import ReactDOM from 'react-dom'
 import classnames from 'classnames';
 import { Segment } from 'semantic-ui-react'
@@ -19,12 +20,14 @@ class GiphyPortal extends React.Component {
     this.state = {
       open: false,
       selectedTabId: 1,
-      intervalId: null
+      intervalId: null,
+      gifsRequired: 5,
+      //loadedGifList: [],
     }  
   }  
   componentDidMount() {
     let query = this.props.hexagram.tags[0].label 
-    this.props.searchGiphy(query)
+    this.props.submitSearch(query)
     console.log(this.props)
   }
 
@@ -37,12 +40,11 @@ class GiphyPortal extends React.Component {
   labelClick = (label, event, selectedTabId, id) => {
     event.preventDefault();
     let query = event.target.innerText;    
-    const { searchGiphy } = this.props
-    searchGiphy(query);
+    const { submitSearch } = this.props
+    submitSearch(query);
     this.setState({ selectedTabId : label.id });
   }
   render() {
-    console.log(this.props.searchGiphy)
     let hexNumber = Number( this.props.match.params.number );
     let hex  = IchingTable.getHexagram( hexNumber );
     let {trigrams, name, number, description, tags, selectedTabId} = this.props.hexagram;
@@ -100,19 +102,18 @@ class GiphyPortal extends React.Component {
              {searchtags}   
             </div>
           <div>
-            <GifImageContainer giphied={this.props.giphied} />
+           <GifImageContainer />
+           <Loading />
           </div> 
-          
+         
       </div>
     );
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    giphied: state.giphied,
-  }
-}
+const mapStateToProps = ({ loadedGifList }) => ({
+  loadedGifList
+})
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(gifActions, dispatch)

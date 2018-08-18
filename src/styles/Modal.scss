@@ -177,4 +177,42 @@ a.ui.large.basic.label.slabel--active {
     font-size: 19px;
     letter-spacing: 2px;
   }
+
+  /* Giphy images */
+
+  .result-display {
+    margin-bottom: 50px;
+}
+
+.result-grid {
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.gif {
+    width:200px;
+}
+
+.loading-section {
+    margin-bottom: 100px;
+}
+
+.spinner, .load-more-button, .error-message {
+    display:block;
+    margin:0 auto;
+    width:75px;
+}
+
+.error-message {
+    width:150px;
+    color :red;
+    text-align:center;
+}
+
+
   
