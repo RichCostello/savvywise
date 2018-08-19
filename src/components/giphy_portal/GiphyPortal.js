@@ -94,7 +94,7 @@ class GiphyPortal extends React.Component {
               <h3>{number}: {name}</h3>
               <h2>{description}</h2>
             </div> 
-            <ApiSelector/>
+            <ApiSelector hexagram={hex} trigrams/>
           </div>
           </Segment>
             <div>

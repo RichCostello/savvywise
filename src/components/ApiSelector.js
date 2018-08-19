@@ -8,6 +8,7 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import NativeSelect from '@material-ui/core/NativeSelect';
 import { withRouter } from "react-router-dom";
+import * as IchingTable from '../constants/lookup.js';
 
 
 const styles = theme => ({
@@ -21,10 +22,16 @@ const styles = theme => ({
     }
 });
 
+var options = [
+    { value: 'one', label: 'One' },
+    { value: 'two', label: 'Two' }
+  ]
+
 class ApiSelector extends React.Component {
   
     onChange = (event) => {
         this.props.history.push(`${event.target.value}`);
+       
     }
 
     constructor(props) {
@@ -34,6 +41,14 @@ class ApiSelector extends React.Component {
         open: false,
       }
     }
+
+    // searchImgur {
+    //     this.props.history.push(`/imgur/${hex.number}/${hex.name}` );
+
+    // searchGiphy {
+    //     this.props.history.push(`/giphy/${hex.number}/${hex.name}` );
+
+    // }
         
 
     handleChange = event => {
@@ -50,6 +65,8 @@ class ApiSelector extends React.Component {
 
     render() {
         const { classes} = this.props;
+        let hexNumber = Number( this.props.match.params.number );
+    let hex  = IchingTable.getHexagram( hexNumber );
         return (
            <form autoComplete="off">
         
@@ -57,8 +74,8 @@ class ApiSelector extends React.Component {
             <InputLabel htmlFor="uncontrolled-native">Select an API</InputLabel>
             <NativeSelect input={<Input name="name" id="uncontrolled-native" />} onChange={this.onChange}>
                 <option value=""></option>
-                <option value="/imgur/1/Chien">Imgur Memes</option>
-                <option value="/giphy/1/Chien">Giphy Gifs</option>
+                <option value={`/imgur/${hex.number}/${hex.name}`}>Imgur Memes</option>
+                <option value={`/giphy/${hex.number}/${hex.name}`}>Giphy Gifs</option>
             </NativeSelect>
             </FormControl>
            </form>

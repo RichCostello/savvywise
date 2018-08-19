@@ -21,7 +21,7 @@ class DetailPage extends React.Component{
   searchport(hex) {
     
     this.props.history.push( `/imgur/${hex.number}/${hex.name}` );
-    this.props;
+   
     console.log("this is the bar hex");
     
   }
