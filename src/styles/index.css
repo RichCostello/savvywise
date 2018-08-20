@@ -88,6 +88,9 @@
   .hexagram-card > .title {
     flex: 0 0 60%;
     margin-left: 2.5%; }
+    @media (max-width: 680px) {
+      .hexagram-card > .title {
+        flex: 0 0 30%; } }
     .hexagram-card > .title h3, .hexagram-card > .title h2 {
       margin: 0px; }
   .hexagram-card .trigrams {
@@ -380,6 +383,13 @@ a.ui.large.basic.label.slabel--active {
   margin: auto;
   margin-top: 3%; }
 
+.image-modal {
+  max-width: 450px;
+  height: auto; }
+  @media (max-width: 960px) {
+    .image-modal {
+      max-width: 350px; } }
+
 .dialog-body {
   display: flex;
   flex-direction: column;
@@ -496,6 +506,13 @@ a.ui.large.basic.label.slabel--active {
   height: 300px;
   object-fit: cover; }
 
+.gif-modal {
+  max-width: 450px;
+  height: auto; }
+  @media (max-width: 960px) {
+    .gif-modal {
+      max-width: 350px; } }
+
 .loading-section {
   margin-bottom: 100px; }
 
@@ -508,6 +525,17 @@ a.ui.large.basic.label.slabel--active {
   width: 150px;
   color: red;
   text-align: center; }
+
+.GifImageCard-paper-195 {
+  width: auto !important; }
+
+.modal-close {
+  position: fixed;
+  top: 10px;
+  right: 10px; }
+  @media (max-width: 768px) {
+    .modal-close {
+      top: 5px; } }
 
 body {
   margin: 0;

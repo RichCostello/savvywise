@@ -16,6 +16,9 @@
   .hexagram-card > .title {
     flex: 0 0 60%;
     margin-left: 2.5%; }
+    @media (max-width: 680px) {
+      .hexagram-card > .title {
+        flex: 0 0 30%; } }
     .hexagram-card > .title h3, .hexagram-card > .title h2 {
       margin: 0px; }
   .hexagram-card .trigrams {

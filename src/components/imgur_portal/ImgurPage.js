@@ -101,7 +101,7 @@ class ImgurPage extends React.Component {
           </div>
           </Segment>
             <div>
-            <p>Click on key words to search Imgur Memes</p>
+            <p>Click on key words to search Imgur Memes Click on image to see full size</p>
              {searchtags}   
             </div>
           <div>

@@ -99,7 +99,7 @@ class GiphyPortal extends React.Component {
           </div>
           </Segment>
             <div>
-            <p>Click on key words to search Giphy Gifs</p>
+            <p>Click on key words to search Giphy Gifs. Click on image to see full size</p>
              {searchtags}   
             </div>
           <div >

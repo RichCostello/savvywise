@@ -125,11 +125,12 @@ class ImageCard extends React.Component {
           onClose={this.handleClose}
           >
           <div style={getModalStyle()} className={classes.paper}>
+          <button aria-label="Close Account Info Modal Box" className="modal-close" onClick={this.handleClose}>&times;</button>
             <Typography variant="title" id="modal-title">
             {this.props.pic.title}
             </Typography>
             
-            <img className="image" src={this.props.url} alt={this.props.pic.title} />
+            <img className="image-modal" src={this.props.url} alt={this.props.pic.title} />
           </div>
           </Modal>
           </div>

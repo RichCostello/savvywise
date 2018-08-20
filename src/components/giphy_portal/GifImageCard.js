@@ -89,10 +89,17 @@ class GifImageCard extends React.Component {
         const { classes, gifs } = this.props;
         return (
           <div>
+            {loading ? (
+              <Card className="image-card">
+            
+              <MyBulletListLoader />
+             
+              </Card>
+            ):(
             <Card className={classes.card} onClick={this.handleOpen}>
             <img key={this.props.id} onError={this.handleError} src={this.props.gif} className={classes.image} />
            </Card>
-           
+           )}
            <Modal
             aria-labelledby="simple-modal-title"
             aria-describedby="simple-modal-description"
@@ -100,7 +107,8 @@ class GifImageCard extends React.Component {
             onClose={this.handleClose}
             >
             <div style={getModalStyle()} className={classes.paper}>
-              <img key={this.props.id} className="gif" src={this.props.gif} />
+            <button aria-label="Close Account Info Modal Box" className="modal-close" onClick={this.handleClose}>&times;</button>
+              <img key={this.props.id} className="gif-modal" src={this.props.gif} />
             </div>
           </Modal>
           </div>
