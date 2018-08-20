@@ -20,7 +20,7 @@ export const searchError = (state = "", action) => {
   }
 }
 
-export const gifsRequired = (state = 5, action) => state
+export const gifsRequired = (state = 8, action) => state
 
 export const loadedGifList = (state = [], action) => {
   switch (action.type) {

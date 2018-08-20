@@ -26,7 +26,7 @@ const theme = createMuiTheme({
 const initialState = {
   searchTerm: '',
   searchError: '',
-  gifsRequired: 5,
+  gifsRequired: 8,
   loadedGifList: [],
   loadingError: '',
   loadingStatus: false

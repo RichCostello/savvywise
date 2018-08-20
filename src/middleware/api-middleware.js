@@ -64,7 +64,7 @@ const getFromApi = (next, { gifsRequired, searchTerm, loadedGifList }) => (succe
 
 const gifResponseToGifUrlList = gifResponse => {
     try {
-        return gifResponse.data.map(n => n.images.fixed_width_downsampled.url)
+        return gifResponse.data.map(n => n.images.original.url)
     } catch (err) {
         return err
     }

@@ -306,7 +306,11 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Arguing"},
+            {"id": 2, "label":"Conflict"},
+            {"id": 3, "label":"Lawsuit"},
+            {"id": 4, "label":"Obstruction"},
+            {"id": 5, "label":"Disharmony"}
         ]
     },
     {
@@ -351,7 +355,12 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"The Army"},
+            {"id": 2, "label":"Strength"},
+            {"id": 3, "label":"Good Fortune without blame"},
+            {"id": 4, "label":"Leading"},
+            {"id": 5, "label":"The Troops"},
+            {"id": 6, "label":"Stored Power"}
         ]
     },
     {
@@ -396,7 +405,12 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Holding Together"},
+            {"id": 2, "label":"Grouping"},
+            {"id": 3, "label":"Alliance"},
+            {"id": 4, "label":"Leading"},
+            {"id": 5, "label":"Strong Willed"},
+            {"id": 6, "label":"Mutual Respect"}
         ]
     },
     {
@@ -441,7 +455,11 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Small Harvest"},
+            {"id": 2, "label":"Taming"},
+            {"id": 3, "label":"Rethink"},
+            {"id": 4, "label":"Gather Knowledge"},
+            {"id": 5, "label":"Learn From Mistakes"}
         ]
     },
     {
@@ -490,7 +508,9 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Treading"},
+            {"id": 2, "label":"Tread Lightly"},
+            {"id": 3, "label":"Continuing"}
         ]
     },
     {
@@ -3064,7 +3084,9 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Before Completion"},
+            {"id": 2, "label":"Unfinished"},
+            {"id": 3, "label":"Before the Finish"}
         ]
     }
 ]

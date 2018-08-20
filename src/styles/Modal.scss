@@ -195,7 +195,9 @@ a.ui.large.basic.label.slabel--active {
 }
 
 .gif {
-    width:200px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
 .loading-section {

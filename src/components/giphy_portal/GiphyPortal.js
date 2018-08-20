@@ -21,7 +21,7 @@ class GiphyPortal extends React.Component {
       open: false,
       selectedTabId: 1,
       intervalId: null,
-      gifsRequired: 5,
+      gifsRequired: 8,
       //loadedGifList: [],
     }  
   }  
@@ -45,6 +45,7 @@ class GiphyPortal extends React.Component {
     this.setState({ selectedTabId : label.id });
   }
   render() {
+    let {i} =this.props;
     let hexNumber = Number( this.props.match.params.number );
     let hex  = IchingTable.getHexagram( hexNumber );
     let {trigrams, name, number, description, tags, selectedTabId} = this.props.hexagram;
@@ -101,8 +102,8 @@ class GiphyPortal extends React.Component {
             <p>Click on key words to search Giphy Gifs</p>
              {searchtags}   
             </div>
-          <div>
-           <GifImageContainer />
+          <div >
+           <GifImageContainer key={i} />
            <Loading />
           </div> 
          

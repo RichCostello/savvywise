@@ -31,7 +31,6 @@ const styles = theme => ({
     marginTop: 25,
     marginTop: '1vw',
   },
-
   image: {
     width: 300,
     height: 300,
@@ -39,7 +38,6 @@ const styles = theme => ({
     marginTop: '3%',
     objectFit: 'cover',
   },
-
   paper: {
     position: 'absolute',
     width: theme.spacing.unit * 65,
@@ -50,7 +48,6 @@ const styles = theme => ({
     boxShadow: theme.shadows[5],
     padding: theme.spacing.unit * 4,
   },
-
 });
 
 class GifImageCard extends React.Component {
@@ -63,9 +60,7 @@ class GifImageCard extends React.Component {
         }
       }
       componentDidMount() {
-        
         this.timerHandle = setTimeout(() => this.setState({ loading: false }), 3500); // simulates an async action, and hides the spinner
-   
       }
 
       componentWillUnmount(){
@@ -89,55 +84,27 @@ class GifImageCard extends React.Component {
         this.setState({errored: true})       
       }
 
-      
-      
       render() {
-
         const { loading } = this.state;
-        const { classes } = this.props;
-        if (this.state.errored) {
-          return null;
-        } else {
+        const { classes, gifs } = this.props;
         return (
-
           <div>
-           
-          {loading ? (
-            <Card className="image-card">
-            
-            <MyBulletListLoader />
-           
-            </Card>
-          ):(
-            
             <Card className={classes.card} onClick={this.handleOpen}>
-           
-            
-            <img onError={this.handleError} src={this.props.giphied} className={classes.image} />
-            <CardContent>
-            <Typography component="p">
-            
-            </Typography>
-          </CardContent>
+            <img key={this.props.id} onError={this.handleError} src={this.props.gif} className={classes.image} />
            </Card>
-          )}
+           
            <Modal
-          aria-labelledby="simple-modal-title"
-          aria-describedby="simple-modal-description"
-          open={this.state.open}
-          onClose={this.handleClose}
-          >
-          <div style={getModalStyle()} className={classes.paper}>
-            <Typography variant="title" id="modal-title">
-            
-            </Typography>
-            
-            <img className="image" src={this.props.url} />
-          </div>
+            aria-labelledby="simple-modal-title"
+            aria-describedby="simple-modal-description"
+            open={this.state.open}
+            onClose={this.handleClose}
+            >
+            <div style={getModalStyle()} className={classes.paper}>
+              <img key={this.props.id} className="gif" src={this.props.gif} />
+            </div>
           </Modal>
           </div>
         )
-      }
       }
 }
 
