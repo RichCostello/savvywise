@@ -28,8 +28,8 @@ export const api = ({ getState }) => next => action => {
 
 
 const calculateGifUrl = (limit, searchTerm, offset) => {
-    const searchUrl = 'http://api.giphy.com/v1/gifs/search?q=';
-    const trendingUrl = 'http://api.giphy.com/v1/gifs/trending?limit=';
+    const searchUrl = 'https://api.giphy.com/v1/gifs/search?q=';
+    const trendingUrl = 'https://api.giphy.com/v1/gifs/trending?limit=';
     const apiKey = '&api_key=P85PMs1e5hTKVwk3xGfLqNcvJOo6xqHZ';
     if (!searchTerm && !offset) {
         return trendingUrl + limit + apiKey
