@@ -8,7 +8,6 @@ import {searchTerm,
   loadedGifList,
   loadingError,
   loadingStatus} from './giphyreducer';
-import imageUrls from './imageUrls'
 
 
 const allReducers = combineReducers({

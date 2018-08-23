@@ -76,6 +76,7 @@ class ApiSelector extends React.Component {
                 <option value=""></option>
                 <option value={`/imgur/${hex.number}/${hex.name}`}>Imgur Memes</option>
                 <option value={`/giphy/${hex.number}/${hex.name}`}>Giphy Gifs</option>
+                <option value={`/twitter/${hex.number}/${hex.name}`}>Twitter Tweets</option>
             </NativeSelect>
             </FormControl>
            </form>

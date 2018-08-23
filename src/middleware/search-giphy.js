@@ -1,6 +1,6 @@
 import * as actions from '../actions/giphyActions';
 
-export const search = ({ dispatch }) => next => action => {
+export const searchGiphy = ({ dispatch }) => next => action => {
     next(action);
     if (action.type === 'SUBMIT_SEARCH') {
         let searchError = validateSearchTerm(action.searchTerm);

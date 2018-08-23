@@ -1,6 +1,6 @@
 import * as actions from '../actions/giphyActions';
 
-export const api = ({ getState }) => next => action => {
+export const apiGiphy = ({ getState }) => next => action => {
     next(action);
 
     const getFromApiWithStore = getFromApi(next, getState());

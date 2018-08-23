@@ -3035,7 +3035,11 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Peace"},
+            {"id": 2, "label":"Small Steps"},
+            {"id": 3, "label":"Caution"},
+            {"id": 4, "label":"Old to New"},
+            {"id": 5, "label":"Discretion"}
         ]
     },
     {
@@ -3086,7 +3090,9 @@
         "tags": [
             {"id": 1, "label":"Before Completion"},
             {"id": 2, "label":"Unfinished"},
-            {"id": 3, "label":"Before the Finish"}
+            {"id": 3, "label":"Before the Finish"},
+            {"id": 4, "label":"Not yet Complete"},
+            {"id": 5, "label":"Springtime"}
         ]
     }
 ]

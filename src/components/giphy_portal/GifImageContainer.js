@@ -84,7 +84,10 @@ class GifImageContainer extends React.Component {
               
                   <div className="image-wrapper">
                       {gifList}
-                  </div>           
+                  </div>    
+                  <div className="note">
+                    {gifList.length === 0 ? <p id="morebut">No search results</p> : ""}   
+                  </div>       
           </div>    
         )
     }

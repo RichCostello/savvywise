@@ -10,6 +10,7 @@ import { Switch, Route, Link, Redirect } from "react-router-dom";
 import DetailPage from './DetailPage';
 import ImgurPageContainer from './imgur_portal/ImgurPageContainer';
 import GiphyPageContainer from './giphy_portal/GiphyPageContainer';
+import TwitterPageContainer from './twitter_portal/TwitterPageContainer';
 import AppBarHex from './AppBarHex';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import * as injectTapEventPlugin from 'react-tap-event-plugin';
@@ -129,6 +130,7 @@ class PermanentDrawer extends React.Component {
             <Route  exact  path={`/details/:number/:name`} render={(props) => ( <AppBarHex {...props} /> )}/>
             <Route  exact  path={`/imgur/:number/:name`} render={(props) => ( <AppBarHex {...props} /> )}/>
             <Route  exact  path={`/giphy/:number/:name`} render={(props) => ( <AppBarHex {...props} /> )}/>
+            <Route  exact  path={`/twitter/:number/:name`} render={(props) => ( <AppBarHex {...props} /> )}/>
             </Toolbar>
       
           </AppBar>
@@ -169,6 +171,7 @@ class PermanentDrawer extends React.Component {
              <Route  exact  path={`/details/:number/:name`} component={DetailPage} />
              <Route  exact  path={`/imgur/:number/:name`}  component={ImgurPageContainer}/>
              <Route  exact  path={`/giphy/:number/:name`}  component={GiphyPageContainer}/>
+             <Route  exact  path={`/twitter/:number/:name`}  component={TwitterPageContainer}/>
              <Redirect from="/savvywise" exact to="/home" />
              </Switch>
              </div>
