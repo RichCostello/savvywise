@@ -40,6 +40,7 @@ class DetailPage extends React.Component{
       let lines = _.chain( hex.interpretation.lines ).map( (line, index) => {
             return (
               <div className="line" key={index}>
+              
                 <blockquote>{line.poem}</blockquote>
                 <p>{line.expl}</p>
               </div>

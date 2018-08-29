@@ -20,7 +20,6 @@ class GiphyPortal extends React.Component {
     this.state = {
       open: false,
       selectedTabId: 1,
-      intervalId: null,
       gifsRequired: 8,
       //loadedGifList: [],
     }  

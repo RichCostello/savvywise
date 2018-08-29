@@ -537,6 +537,10 @@ a.ui.large.basic.label.slabel--active {
     .modal-close {
       top: 5px; } }
 
+/* tweets */
+.tweet {
+  max-width: 375px; }
+
 body {
   margin: 0;
   padding: 0;

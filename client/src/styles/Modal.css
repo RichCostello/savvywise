@@ -200,3 +200,7 @@ a.ui.large.basic.label.slabel--active {
   @media (max-width: 768px) {
     .modal-close {
       top: 5px; } }
+
+/* tweets */
+.tweet {
+  max-width: 375px; }

@@ -2,16 +2,18 @@ import React from 'react'
 import { Label } from 'semantic-ui-react'
 import * as IchingTable from '../../constants/lookup.js';
 import { HexagramImage } from '../HexagramImage.js';
-//import * as gifActions from '../../actions/giphyActions';
-//import { connect } from 'react-redux'
-//import { bindActionCreators } from 'redux'
-//import GifImageContainer from './GifImageContainer.js';
+import * as twitterActions from '../../actions/twitterActions';
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import TweetFeed from './TweetFeed.js';
 //import { Loading } from './Loading'
 import ReactDOM from 'react-dom'
 import classnames from 'classnames';
 import { Segment } from 'semantic-ui-react'
 import { NavLink, withRouter} from 'react-router-dom';
 import ApiSelector from '../ApiSelector';  
+import PropTypes from "prop-types";
+import Spinner from './Spinner';
 
 class TwitterPortal extends React.Component {
 
@@ -20,14 +22,18 @@ class TwitterPortal extends React.Component {
     this.state = {
       open: false,
       selectedTabId: 1,
-      intervalId: null,
-      gifsRequired: 8,
-      //loadedGifList: [],
+      query:"",
+      count: "59"
     }  
   }  
   componentDidMount() {
-    let query = this.props.hexagram.tags[0].label 
-    this.props.submitSearch(query)
+    //let query = this.props.hexagram.tags[0].label 
+    //this.props.queryData(query)
+    const queryData = {
+      query: this.props.hexagram.tags[0].label,
+      count: this.state.count
+    }
+    this.props.sendQueryData(queryData)
     console.log(this.props)
   }
 
@@ -39,16 +45,20 @@ class TwitterPortal extends React.Component {
   
   labelClick = (label, event, selectedTabId, id) => {
     event.preventDefault();
-    let query = event.target.innerText;    
-    const { submitSearch } = this.props
-    submitSearch(query);
+    //let query = event.target.innerText;    
+    const queryData = {
+      query: event.target.innerText,
+      count: this.state.count
+    }
     this.setState({ selectedTabId : label.id });
+    this.props.sendQueryData(queryData);
   }
   render() {
     let {i} =this.props;
     let hexNumber = Number( this.props.match.params.number );
     let hex  = IchingTable.getHexagram( hexNumber );
     let {trigrams, name, number, description, tags, selectedTabId} = this.props.hexagram;
+     //start searchtags
       let searchtags = (tags).map( (tag, label, id, index) => {
         let initActive = (match, location) => {
           if (!match) {
@@ -57,8 +67,9 @@ class TwitterPortal extends React.Component {
           let selectedTabId = parseInt(match.selectedTabId)
           return this.state.selectedTabId === tag.id;
         }
-    
         const params = new URLSearchParams(this.props)
+     
+        
         return (
           <div className="labeltags" key={label} >
           <Label 
@@ -75,7 +86,21 @@ class TwitterPortal extends React.Component {
             </Label>
           </div>   
         );
-      })
+       })
+       //end searchtag
+       const { tweets, loading, isSuccess } = this.props.search;
+       let content;
+        if (loading) {
+          content = <Spinner />;
+        } else if (tweets.length === 0 && isSuccess) {
+          content = (
+            <div className="no-content">There is no tweet with those hashtags</div>
+          );
+        } else if (tweets.length !== 0) {
+          content = <TweetFeed tweets={tweets} />;
+        } else {
+          content = <div className="reminder">Search tweets using hashtags</div>;
+        }
       
     return (
       <div>
@@ -102,9 +127,9 @@ class TwitterPortal extends React.Component {
             <p>Click on key words to search Giphy Gifs. Click on image to see full size</p>
              {searchtags}   
             </div>
-          <div >
-           Test for TwitterPortal
+          <div className="image-wrapper">
           
+            {content}
           </div> 
          
       </div>
@@ -112,12 +137,13 @@ class TwitterPortal extends React.Component {
   }
 }
 
-/* const mapStateToProps = ({ loadedGifList }) => ({
-  loadedGifList
-})
-
+function mapStateToProps(state) {
+  return {
+    search: state.search
+  }
+}
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators(gifActions, dispatch)
-} */
+  return bindActionCreators(twitterActions, dispatch)
+} 
 
-export default withRouter/* (connect(mapStateToProps, mapDispatchToProps) */(TwitterPortal);
+export default withRouter (connect(mapStateToProps, mapDispatchToProps)(TwitterPortal));

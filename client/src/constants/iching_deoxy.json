@@ -1,7 +1,7 @@
 [
     {
         "number": 1,
-        "name": "Chien",
+        "name": "Qián",
         "description": "The Creative",
         "trigrams": {
             "above": {
@@ -49,13 +49,14 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":"creative"},
-            {"id": 2, "label":"power"},
-            {"id": 3, "label":"perseverance"},
-            {"id": 4, "label":"sublime"},
-            {"id": 5, "label":"primal"},
-            {"id": 6, "label":"heaven"},
-            {"id": 7, "label":"hidden dragon"}
+            {"id": 1, "label":"Creative"},
+            {"id": 2, "label":"Qián"},
+            {"id": 3, "label":"Power"},
+            {"id": 4, "label":"Perseverance"},
+            {"id": 5, "label":"Sublime"},
+            {"id": 6, "label":"Primal"},
+            {"id": 7, "label":"Heaven"},
+            {"id": 8, "label":"Hidden dragon"}
         ]
     },
     {
@@ -105,9 +106,10 @@
         },
         "tags": [
             {"id": 1, "label":"receptive"},
-            {"id": 2, "label": "acquiescence"},
-            {"id": 3, "label": "flow"},
-            {"id": 4, "label": "earth"}
+            {"id": 2, "label":"Kun"},
+            {"id": 3, "label": "acquiescence"},
+            {"id": 4, "label": "flow"},
+            {"id": 5, "label": "earth"}
             
         ]
     },
@@ -154,12 +156,13 @@
         },
         "tags": [
             {"id": 1, "label":"sprouting"},
-            {"id": 2, "label":"difficulty"},
-            {"id": 3, "label":"hoarding"},
-            {"id": 4, "label":"gathering support"},
-            {"id": 5, "label":"thunder"},
-            {"id": 6, "label":"water"},
-            {"id": 7, "label":"gorge"}
+            {"id": 2, "label":"Chun"},
+            {"id": 3, "label":"difficulty"},
+            {"id": 4, "label":"hoarding"},
+            {"id": 5, "label":"gathering support"},
+            {"id": 6, "label":"thunder"},
+            {"id": 7, "label":"water"},
+            {"id": 8, "label":"gorge"}
         ]
     },
     {
@@ -209,12 +212,13 @@
         },
         "tags": [
             {"id": 1, "label":"folly"},
-            {"id": 2, "label":"ignorance"},
-            {"id": 3, "label":"youth"},
-            {"id": 4, "label":"rumspringa"},
-            {"id": 5, "label":"enveloping"},
-            {"id": 6, "label":"fool"},
-            {"id": 7, "label":"youthful folly"}
+            {"id": 2, "label": "Mêng"},
+            {"id": 3, "label":"ignorance"},
+            {"id": 4, "label":"youth"},
+            {"id": 5, "label":"rumspringa"},
+            {"id": 6, "label":"enveloping"},
+            {"id": 7, "label":"fool"},
+            {"id": 8, "label":"youthful folly"}
         ]
     },
     {
@@ -264,9 +268,10 @@
         },
         "tags": [
             {"id": 1, "label":"waiting"},
-            {"id": 2, "label":"moistened"},
-            {"id": 3, "label":"arriving"},
-            {"id": 4, "label":"nourishment"}
+            {"id": 2, "label": "Hsü"},
+            {"id": 3, "label":"moistened"},
+            {"id": 4, "label":"arriving"},
+            {"id": 5, "label":"nourishment"}
         ]
     },
     {
@@ -307,11 +312,12 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":"Arguing"},
-            {"id": 2, "label":"Conflict"},
-            {"id": 3, "label":"Lawsuit"},
-            {"id": 4, "label":"Obstruction"},
-            {"id": 5, "label":"Disharmony"}
+            {"id": 1, "label":"Conflict"},
+            {"id": 2, "label":"Sung"},
+            {"id": 3, "label":"Arguing"},
+            {"id": 4, "label":"Lawsuit"},
+            {"id": 5, "label":"Obstruction"},
+            {"id": 6, "label":"Disharmony"}
         ]
     },
     {
@@ -357,11 +363,12 @@
         },
         "tags": [
             {"id": 1, "label":"The Army"},
-            {"id": 2, "label":"Strength"},
-            {"id": 3, "label":"Good Fortune without blame"},
-            {"id": 4, "label":"Leading"},
-            {"id": 5, "label":"The Troops"},
-            {"id": 6, "label":"Stored Power"}
+            {"id": 2, "label":"Shih"},
+            {"id": 3, "label":"Strength"},
+            {"id": 4, "label":"Good Fortune without blame"},
+            {"id": 5, "label":"Leading"},
+            {"id": 6, "label":"The Troops"},
+            {"id": 7, "label":"Stored Power"}
         ]
     },
     {
@@ -407,11 +414,12 @@
         },
         "tags": [
             {"id": 1, "label":"Holding Together"},
-            {"id": 2, "label":"Grouping"},
-            {"id": 3, "label":"Alliance"},
-            {"id": 4, "label":"Leading"},
-            {"id": 5, "label":"Strong Willed"},
-            {"id": 6, "label":"Mutual Respect"}
+            {"id": 2, "label":"Pi"},
+            {"id": 3, "label":"Grouping"},
+            {"id": 4, "label":"Alliance"},
+            {"id": 5, "label":"Leading"},
+            {"id": 6, "label":"Strong Willed"},
+            {"id": 7, "label":"Mutual Respect"}
         ]
     },
     {
@@ -456,11 +464,14 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":"Small Harvest"},
-            {"id": 2, "label":"Taming"},
-            {"id": 3, "label":"Rethink"},
-            {"id": 4, "label":"Gather Knowledge"},
-            {"id": 5, "label":"Learn From Mistakes"}
+            {"id": 1, "label":"Passive Restraint"},
+            {"id": 2, "label":"Hsiao Chu"},
+            {"id": 3, "label":"Small Harvest"},
+            {"id": 4, "label":"Taming"},
+            {"id": 5, "label":"Rethink"},
+            {"id": 6, "label":"Gather Knowledge"},
+            {"id": 7, "label":"Learn From Mistakes"},
+            {"id": 8, "label":"Small Accumulating"}
         ]
     },
     {
@@ -510,11 +521,17 @@
         },
         "tags": [
             {"id": 1, "label":"Treading"},
-            {"id": 2, "label":"Tread Lightly"},
-            {"id": 3, "label":"Continuing"},
-            {"id": 4, "label":"Careful"},
-            {"id": 5, "label":"Caution"},
-            {"id": 6, "label":"Treading Carefully"}
+            {"id": 2, "label":"Lü"},
+            {"id": 3, "label":"Tread Lightly"},
+            {"id": 4, "label":"Continuing"},
+            {"id": 5, "label":"Careful"},
+            {"id": 6, "label":"Caution"},
+            {"id": 7, "label":"Treading Carefully"},
+            {"id": 8, "label":"Watch Your Step"},
+            {"id": 9, "label":"Proper Conduct"},
+            {"id": 10, "label":"Treading Carefully"},
+            {"id": 11, "label":"Cautious Advance"},
+            {"id": 12, "label":"Advancing With Care"}
 
         ]
     },
@@ -564,7 +581,14 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Peace"},
+            {"id": 2, "label":"Tai"},
+            {"id": 3, "label":"Prosperity"},
+            {"id": 4, "label":"Pervadinge"},
+            {"id": 5, "label":"Tranquility"},
+            {"id": 6, "label":"Peace"},
+            {"id": 7, "label":"Good Fortune"},
+            {"id": 8, "label":"Heaven on Earth"}
         ]
     },
     {
@@ -601,7 +625,14 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Standstill"},
+            {"id": 2, "label":"Stagnation"},
+            {"id": 3, "label":"Pi"},
+            {"id": 4, "label":"Obstruction"},
+            {"id": 5, "label":"Impasse"},
+            {"id": 6, "label":"The Wife"},
+            {"id": 7, "label":"Decadence"}
+        
         ]
     },
     {
@@ -646,7 +677,11 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Fellowship"},
+            {"id": 2, "label":"Tung Jên"},
+            {"id": 3, "label":"Fellowship with Men"},
+            {"id": 4, "label":"Strong Leader"}
+            
         ]
     },
     {
@@ -695,12 +730,22 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Possession in Great Measure"},
+            {"id": 2, "label":"Ta Yu"},
+            {"id": 3, "label":"Wealth"},
+            {"id": 4, "label":"Abundance"},
+            {"id": 5, "label":"Having What is Great"},
+            {"id": 6, "label":"Success"},
+            {"id": 7, "label":"Great Success"},
+            {"id": 9, "label":"Affluence"},
+            {"id": 10, "label":"Pot of Gold"},
+            {"id": 11, "label":"Good Fortune"}
+            
         ]
     },
     {
         "number": 15,
-        "name": "Chien",
+        "name": "Qiān",
         "description": "Modesty",
         "trigrams": {
             "above": {
@@ -744,7 +789,17 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Modesty"},
+            {"id": 2, "label":"Qiān"},
+            {"id": 3, "label":"Humble"},
+            {"id": 4, "label":"Temperance"},
+            {"id": 5, "label":"Respectful"},
+            {"id": 6, "label":"Keeping Still"},
+            {"id": 7, "label":"Moderation"},
+            {"id": 8, "label":"Humility"},
+            {"id": 9, "label":"Without Prejudice"},
+            {"id": 10, "label":"Yielding"},
+            {"id": 11, "label":"Retiring"}
         ]
     },
     {
