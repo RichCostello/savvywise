@@ -202,8 +202,8 @@ a.ui.large.basic.label.slabel--active {
       top: 5px; } }
 
 /* tweets */
+/* Masonry container */
 .masonry {
-  /* Masonry container */
   column-count: 3;
   column-gap: 1em;
   margin-top: 15px; }
@@ -214,8 +214,8 @@ a.ui.large.basic.label.slabel--active {
     .masonry {
       column-count: 1; } }
 
+/* Masonry brick or child elements */
 .item {
-  /* Masonry bricks or child elements */
   background-color: #eee;
   display: inline-block;
   margin: 0 0 1em;
