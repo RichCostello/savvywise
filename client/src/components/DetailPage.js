@@ -3,8 +3,8 @@ import * as _ from 'lodash';
 import * as IchingTable from '../constants/lookup.js';
 import HexagramInfoCard from './HexagramInfoCard';
 import { Divider } from '@material-ui/core/';
-import { Accordion, Icon, Segment, Label } from 'semantic-ui-react'
-
+import { Accordion, Icon, Segment, Label } from 'semantic-ui-react';
+import LinesHex from './Lines_hex';
 
 
 class DetailPage extends React.Component{
@@ -40,8 +40,11 @@ class DetailPage extends React.Component{
       let lines = _.chain( hex.interpretation.lines ).map( (line, index) => {
             return (
               <div className="line" key={index}>
-              
-                <blockquote>{line.poem}</blockquote>
+                <LinesHex hexagram={hex}/>
+                <blockquote className="linesblock">
+               
+                {line.poem}
+                </blockquote>
                 <p>{line.expl}</p>
               </div>
             );

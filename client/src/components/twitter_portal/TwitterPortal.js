@@ -15,6 +15,7 @@ import ApiSelector from '../ApiSelector';
 import PropTypes from "prop-types";
 import Spinner from './Spinner';
 
+
 class TwitterPortal extends React.Component {
 
   constructor(props) {
@@ -34,7 +35,8 @@ class TwitterPortal extends React.Component {
       count: this.state.count
     }
     this.props.sendQueryData(queryData)
-    console.log(this.props)
+    
+    
   }
 
   detailsback(hex) {
@@ -54,6 +56,7 @@ class TwitterPortal extends React.Component {
     this.props.sendQueryData(queryData);
   }
   render() {
+    
     let {i} =this.props;
     let hexNumber = Number( this.props.match.params.number );
     let hex  = IchingTable.getHexagram( hexNumber );
@@ -101,7 +104,7 @@ class TwitterPortal extends React.Component {
         } else {
           content = <div className="reminder">Search tweets using hashtags</div>;
         }
-      
+
     return (
       <div>
           <Segment raised>
@@ -124,14 +127,14 @@ class TwitterPortal extends React.Component {
           </div>
           </Segment>
             <div>
-            <p>Click on key words to search Giphy Gifs. Click on image to see full size</p>
+            <p>Click on key words to search Twitter Tweets. Click on image to see full size</p>
              {searchtags}   
             </div>
-          <div className="image-wrapper">
-          
+          <div className="masonry">
+              
             {content}
-          </div> 
-         
+           
+          </div>
       </div>
     );
   }

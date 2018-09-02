@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 class TweetEmbed extends Component {
+
   loadTweetForProps(props) {
     const renderTweet = () => {
       const { options, id } = props;
@@ -17,8 +18,10 @@ class TweetEmbed extends Component {
   componentDidMount() {
     this.loadTweetForProps(this.props);
   }
+  
   render() {
-    return <div className="tweet" id={this.props.id} />;
+    
+    return <div className="item" id={this.props.id} />;
   }
 }
 

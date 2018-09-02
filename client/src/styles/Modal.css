@@ -202,5 +202,24 @@ a.ui.large.basic.label.slabel--active {
       top: 5px; } }
 
 /* tweets */
+.masonry {
+  /* Masonry container */
+  column-count: 3;
+  column-gap: 1em;
+  margin-top: 15px; }
+  @media (max-width: 1170px) {
+    .masonry {
+      column-count: 2; } }
+  @media (max-width: 600px) {
+    .masonry {
+      column-count: 1; } }
+
+.item {
+  /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%; }
+
 .tweet {
-  max-width: 375px; }
+  grid-row-end: span 2; }

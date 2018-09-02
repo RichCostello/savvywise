@@ -17,7 +17,7 @@ router.post("/search", (req, res) => {
   // Reconstruct Query
   const query = req.body.query;
   const count = parseInt(req.body.count);
-  const result_type = "recent";
+  const result_type = "mixed";
   twitterClient
     .get("/search/tweets.json", { q: query, result_type, count })
     .then(data => {

@@ -532,7 +532,6 @@
             {"id": 10, "label":"Treading Carefully"},
             {"id": 11, "label":"Cautious Advance"},
             {"id": 12, "label":"Advancing With Care"}
-
         ]
     },
     {
@@ -680,8 +679,11 @@
             {"id": 1, "label":"Fellowship"},
             {"id": 2, "label":"Tung Jên"},
             {"id": 3, "label":"Fellowship with Men"},
-            {"id": 4, "label":"Strong Leader"}
-            
+            {"id": 4, "label":"Strong Leader"},
+            {"id": 4, "label":"Integration of Forces"},
+            {"id": 4, "label":"Cliques"},
+            {"id": 4, "label":"Concordance"},
+            {"id": 4, "label":"To Be In Accord With"}
         ]
     },
     {
@@ -848,7 +850,14 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Enthusiam"},
+            {"id": 2, "label":"Yü"},
+            {"id": 3, "label":"Harmony"},
+            {"id": 4, "label":"Excitement"},
+            {"id": 5, "label":"Self Deception"},
+            {"id": 6, "label":"Excess"},
+            {"id": 7, "label":"Merriment"},
+            {"id": 8, "label":"Self-confidence"}
         ]
     },
     {
@@ -897,7 +906,16 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Following"},
+            {"id": 2, "label":"Sui"},
+            {"id": 3, "label":"Joy of Learning"},
+            {"id": 4, "label":"Inner Virtue"},
+            {"id": 5, "label":"Adhere to Principles"},
+            {"id": 6, "label":"Thunder in the lake"},
+            {"id": 7, "label":"Adapting"},
+            {"id": 8, "label":"Call it a Day"},
+            {"id": 9, "label":"Trust Inner Voice"},
+            {"id": 10, "label":"Higher Self"}
         ]
     },
     {
@@ -930,7 +948,15 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Repairing Damage"},
+            {"id": 2, "label":"Ku"},
+            {"id": 3, "label":"Spoiled"},
+            {"id": 4, "label":"Destruction"},
+            {"id": 5, "label":"Corrupt"},
+            {"id": 6, "label":"Degenerate"},
+            {"id": 7, "label":"Verge of Ruin"},
+            {"id": 8, "label":"Eliminating corruption"},
+            {"id": 9, "label":"Fixing Flaws"}
         ]
     },
     {
@@ -975,7 +1001,17 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Approach"},
+            {"id": 2, "label":"Lin"},
+            {"id": 3, "label":"Getting Ahead"},
+            {"id": 4, "label":"Promotion"},
+            {"id": 5, "label":"Becoming Great"},
+            {"id": 6, "label":"The Forest"},
+            {"id": 7, "label":"Advancing"},
+            {"id": 8, "label":"Spring is Coming"},
+            {"id": 9, "label":"Goodtimes Ahead"},
+            {"id": 10, "label":"Hopeful Progress"},
+            {"id": 11, "label":"Clear Road Ahead"}
         ]
     },
     {
@@ -1020,7 +1056,17 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Contemplation"},
+            {"id": 2, "label":"Kuan"},
+            {"id": 3, "label":"Perception"},
+            {"id": 4, "label":"Observation"},
+            {"id": 5, "label":"Mindful"},
+            {"id": 6, "label":"Observant"},
+            {"id": 7, "label":"Soul Seaching"},
+            {"id": 8, "label":"Developing Inner Strength"},
+            {"id": 9, "label":"Observing True Nature"},
+            {"id": 10, "label":"Self Introspection"},
+            {"id": 11, "label":"To Examine"}
         ]
     },
     {
@@ -1061,7 +1107,16 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Biting Through"},
+            {"id": 2, "label":"Shih Ho"},
+            {"id": 3, "label":"Cutting Through"},
+            {"id": 4, "label":"Confronting a Thorny Situation"},
+            {"id": 5, "label":"Disharmony"},
+            {"id": 6, "label":"Taking Decisive Action"},
+            {"id": 7, "label":"Let's Cut the Bullshit"},
+            {"id": 8, "label":"Brutal Honesty"},
+            {"id": 9, "label":"Vigorous Action"},
+            {"id": 10, "label":"Corrective Action"}
         ]
     },
     {
@@ -1110,7 +1165,11 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Grace"},
+            {"id": 2, "label":"Pi"},
+            {"id": 3, "label":"Elegant"},
+            {"id": 4, "label":"Beauty"},
+            {"id": 5, "label":"Facade"}
         ]
     },
     {
