@@ -33,12 +33,12 @@ export class LinesImage extends Component {
    * Or `below` and `above`, as it trigram name
    */
   componentDidMount() {
-      document.getElementsByClassName('posline')[0].style.top="45px";
+      document.getElementsByClassName('posline')[0].style.top="44px";
       document.getElementsByClassName('posline')[1].style.top="37px";
       document.getElementsByClassName('posline')[2].style.top="30px";
-      //document.getElementsByClassName('posline')[3].style.top="22px";
-      //document.getElementsByClassName('posline')[4].style.top="15px";
-      //document.getElementsByClassName('posline')[5].style.top="7px";
+      document.getElementsByClassName('posline')[3].style.top="22px";
+      document.getElementsByClassName('posline')[4].style.top="14px";
+      document.getElementsByClassName('posline')[5].style.top="7px";
   }
 
    render() {

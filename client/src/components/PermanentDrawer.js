@@ -63,6 +63,10 @@ const styles = theme => ({
       marginTop: 64,
     },
   },
+
+  savvytext: {
+    color: '#fff'
+  }
 });
 
 
@@ -125,7 +129,7 @@ class PermanentDrawer extends React.Component {
                 <MenuIcon />
               </IconButton>
               <Typography variant="title" color="inherit" noWrap>
-              <Link to="/">SavvyWise Iching</Link>
+              <Link to="/" className={classes.savvytext}>SavvyWise Iching</Link>
               </Typography>
             <Route  exact  path={`/details/:number/:name`} render={(props) => ( <AppBarHex {...props} /> )}/>
             <Route  exact  path={`/imgur/:number/:name`} render={(props) => ( <AppBarHex {...props} /> )}/>

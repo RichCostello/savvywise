@@ -128,10 +128,10 @@
   .lines-hex-card div.posline {
     width: 100%;
     height: 10.25%;
-    background: #ff9801;
+    background: #DB242F;
     position: relative;
     left: 0px;
-    top: 0px; }
+    opacity: .8; }
   .lines-hex-card .hex-img {
     flex: 0 0 15%;
     min-height: 50px;
@@ -408,7 +408,7 @@ a.ui.large.basic.label.slabel {
   color: red; }
 
 a.ui.large.basic.label.slabel--active {
-  color: #ff9800; }
+  color: #DB242F; }
 
 .oversect {
   margin-top: 30%; }
@@ -642,9 +642,9 @@ a {
   font-size: 10px;
   position: relative;
   text-indent: -9999em;
-  border-top: 1.1em solid #ff9800;
-  border-right: 1.1em solid #ff9800;
-  border-bottom: 1.1em solid #ff9800;
+  border-top: 1.1em solid #db242f;
+  border-right: 1.1em solid #db242f;
+  border-bottom: 1.1em solid #db242f;
   border-left: 1.1em solid #000000;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);

@@ -8,7 +8,7 @@ const MyBulletListLoader = () => {
                 width={400}
                 className={'oversect'}
                 speed={2}
-                primaryColor="#FF9800"
+                primaryColor="#DB242F"
                 secondaryColor="#000000"
                
               >

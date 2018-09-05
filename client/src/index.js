@@ -11,14 +11,20 @@ import PermanentDrawer from './components/PermanentDrawer';
 import DetailPage from './components/DetailPage';
 import registerServiceWorker from './registerServiceWorker';
 import orange from '@material-ui/core/colors/orange';
-import green from '@material-ui/core/colors/green';
 import { getTrendingGifsStarted } from './actions/giphyActions';
 
 
 const theme = createMuiTheme({
     palette: {
-      primary: orange,
-      secondary: green,
+      primary: {
+        main:'#DB242F'
+      },
+      secondary: {
+        main: '#000',
+      },
+    },
+    status: {
+      danger: 'orange',
     },
   
 });

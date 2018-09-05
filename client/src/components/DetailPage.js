@@ -59,7 +59,7 @@ class DetailPage extends React.Component{
             onClick={this.searchport.bind(this,hex)}
             onTouchTap={this.searchport.bind(this,hex)}
             ribbon='right'
-            color='orange'
+            color='red'
             >
             Search Portal
             </Label>

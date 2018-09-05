@@ -113,7 +113,7 @@ class TwitterPortal extends React.Component {
             onClick={this.detailsback.bind(this, hex)}
             onTouchTap={this.detailsback.bind(this, hex)}
             ribbon='right'
-            color='orange'
+            color='red'
             >
              &#x2190; Back
             </Label> 
