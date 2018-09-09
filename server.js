@@ -3,7 +3,24 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const twitters = require("./routes/api/twitters");
 
+const AWS = require('aws-sdk');
+const fs = require('fs');
 const app = express();
+
+// configure the keys for accessing AWS
+AWS.config.update({
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+});
+
+var s3 = new AWS.S3();
+
+
+//configuring parameters
+var params = {
+  Bucket: 'savvywise',
+
+};
 
 // Body Parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));

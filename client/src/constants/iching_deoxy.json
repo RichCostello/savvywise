@@ -3172,7 +3172,7 @@
     },
     {
         "number": 57,
-        "name": "Sun",
+        "name": "Xun",
         "description": "The Gentle (The Penetrating, Wind)",
         "trigrams": {
             "above": {
@@ -3220,7 +3220,16 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Proceeding Humbly"},
+            {"id": 2, "label":"Xun"},
+            {"id": 3, "label":"Summer Breeze"},
+            {"id": 4, "label":"Gentle Wind"},
+            {"id": 5, "label":"Gentle"},
+            {"id": 6, "label":"Humility"},
+            {"id": 7, "label":"Devoted Service"},
+            {"id": 8, "label":"Kill em with Kindness"},
+            {"id": 9, "label":"Modest Success"},
+            {"id": 10, "label":"Willing Submission"}
         ]
     },
     {
@@ -3275,7 +3284,15 @@
         "tags": [
             {"id": 1, "label":"Joyous"},
             {"id": 2, "label":"Lake"},
-            {"id": 3, "label":"Tui"}
+            {"id": 3, "label":"Tui"},
+            {"id": 4, "label":"Happiness Within"},
+            {"id": 5, "label":"Joy"},
+            {"id": 6, "label":"Delight"},
+            {"id": 7, "label":"Pleasure"},
+            {"id": 8, "label":"Beaming"},
+            {"id": 9, "label":"Glow"},
+            {"id": 10, "label":"Shine Inner Light"},
+            {"id": 11, "label":"Stability"}
         ]
     },
     {
@@ -3330,7 +3347,18 @@
         "tags": [
             {"id": 1, "label":"Dispersion"},
             {"id": 2, "label":"Dissolution"},
-            {"id": 3, "label":"Huan"}
+            {"id": 3, "label":"Huan"},
+            {"id": 4, "label":"Reshuffle"},
+            {"id": 5, "label":"Scatter"},
+            {"id": 6, "label":"Separate"},
+            {"id": 7, "label":"Melting Ice"},
+            {"id": 8, "label":"Evaporate"},
+            {"id": 9, "label":"New Deal"},
+            {"id": 10, "label":"Course Correction"},
+            {"id": 11, "label":"Catharsis"},
+            {"id": 12, "label":"Nothing Lasts Forever"},
+            {"id": 13, "label":"Loss of Purpose"}
+
         ]
     },
     {
@@ -3383,7 +3411,18 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Limitation"},
+            {"id": 2, "label":"Chieh"},
+            {"id": 3, "label":"Regulations"},
+            {"id": 4, "label":"Restraint"},
+            {"id": 5, "label":"Containment"},
+            {"id": 6, "label":"Rules and Measures"},
+            {"id": 7, "label":"Setting Limits"},
+            {"id": 8, "label":"Fixed Limits"},
+            {"id": 9, "label":"Know Your Limits"},
+            {"id": 10, "label":"Break Free From Limitation"},
+            {"id": 11, "label":"Know Your Boundries"},
+            {"id": 12, "label":"Useful Limits"}
         ]
     },
     {
@@ -3436,7 +3475,17 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Inner Truth"},
+            {"id": 2, "label":"Chung Fu"},
+            {"id": 3, "label":"Sincerity"},
+            {"id": 4, "label":"Inward Confidence"},
+            {"id": 5, "label":"Centering"},
+            {"id": 6, "label":"Insight"},
+            {"id": 7, "label":"Deep Understading"},
+            {"id": 8, "label":"Inner Knowing"},
+            {"id": 9, "label":"Knowing"},
+            {"id": 10, "label":"Gut Feeling"},
+            {"id": 11, "label":"Don't Fool Yourself"}
         ]
     },
     {
@@ -3489,7 +3538,17 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Small Preponderance"},
+            {"id": 2, "label":"Hsiao Kuo"},
+            {"id": 3, "label":"Small Powers"},
+            {"id": 4, "label":"Slow and Steady"},
+            {"id": 5, "label":"Know Limitations"},
+            {"id": 6, "label":"Bite Off More Than You Can Chew"},
+            {"id": 7, "label":"Ground Your Flights of Fancy"},
+            {"id": 8, "label":"In Over Your Head"},
+            {"id": 9, "label":"Small Undertakings"},
+            {"id": 10, "label":"Developmental"},
+            {"id": 11, "label":"Inflated Ego"}
         ]
     },
     {
@@ -3542,11 +3601,16 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":"Peace"},
-            {"id": 2, "label":"Small Steps"},
+            {"id": 1, "label":"After Completion"},
+            {"id": 2, "label":"jì jì"},
             {"id": 3, "label":"Caution"},
             {"id": 4, "label":"Old to New"},
-            {"id": 5, "label":"Discretion"}
+            {"id": 5, "label":"Completed"},
+            {"id": 6, "label":"Settled"},
+            {"id": 7, "label":"Mission Accomplished"},
+            {"id": 8, "label":"New Cycle"},
+            {"id": 9, "label":"Rest on Your Laurels"},
+            {"id": 10, "label":"Don't get too Comfortable"}
         ]
     },
     {
