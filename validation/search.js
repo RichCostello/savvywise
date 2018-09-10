@@ -5,15 +5,7 @@ module.exports = function validateSearchInput(data) {
   let errors = {};
 
   if (isEmpty(data.query)) {
-    errors.query = "At least submit one hashtag";
-  }
-
-  if (!Validator.isInt(data.count)) {
-    errors.count = "Number must be integer";
-  }
-
-  if (isEmpty(data.count)) {
-    errors.count = "Must indicate the number of tweets should be displayed";
+    errors.query = "At least submit one search";
   }
 
   return {

@@ -2,7 +2,6 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
 const twitters = require("./routes/api/twitters");
-const fs = require('fs');
 const app = express();
 
 
