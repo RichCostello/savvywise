@@ -1,6 +1,7 @@
 {
-  "name": "example-create-react-app-express",
+  "name": "savvywise",
   "version": "1.0.0",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "client-install": "npm install --prefix client",
