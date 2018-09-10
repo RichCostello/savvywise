@@ -26,6 +26,24 @@
     -->
     <title>React App</title>
     <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+    <script type="text/javascript">
+      !function(name,path,ctx){
+        var latest,prev=name!=='Keen'&&window.Keen?window.Keen:false;ctx[name]=ctx[name]||{ready:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('script'),w=window,loaded;s.onload=s.onerror=s.onreadystatechange=function(){if((s.readyState&&!(/^c|loade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;latest=w.Keen;if(prev){w.Keen=prev}else{try{delete w.Keen}catch(e){w.Keen=void 0}}ctx[name]=latest;ctx[name].ready(fn)};s.async=1;s.src=path;h.parentNode.insertBefore(s,h)}}
+      }('KeenAsync','https://d26b395fwzu5fz.cloudfront.net/keen-tracking-1.4.2.min.js',this);
+    
+      KeenAsync.ready(function(){
+        // Configure a client instance
+        var client = new KeenAsync({
+          projectId: '5b96f77ac9e77c0001b8421d',
+          writeKey: '905FD8A397462ACE790C325A00E74E682C31A0A47B489EA71971B60247681C2A96B96572FD39C6EF40BB738EA0766FBD50BA57FD11B4EA862B37195462572D0339746A1168657711E2506762B3F49BC71E812017EC594029EDC983978B278132'
+        });
+    
+        // Record an event
+        client.recordEvent('pageviews', {
+          title: document.title
+        });
+      });
+    </script>
   </head>
   <body>
     <div id="root" class="loader"></div>
