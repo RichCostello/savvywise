@@ -100,6 +100,7 @@ class HomePage extends React.Component {
                             {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
                           </Button>
                         </div>
+                       
                       </div>
                     </StepContent>
                   </Step>
@@ -115,6 +116,7 @@ class HomePage extends React.Component {
               </Paper>
              
             )}
+             Contact savvywiseapp@gmail.com 
           </div>
         );
       }

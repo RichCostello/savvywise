@@ -1515,12 +1515,24 @@
                 {
                     "poem": "Nine in the fifth place means:\nUse no medicine in an illness\nIncurred through no fault of your own.\nIt will pass of itself.",
                     "expl": "An unexpected evil may come accidentally from without. If it does not originate in one's own nature or have a foothold there, one should not resort to external means to eradicate it, but should quietly let nature take its course. Then improvement will come of itself."
+                },
+                {
+                    "poem": "Innocent action brings misfortune. Nothing furthers.",
+                    "expl": "When, in a given situation, the time is not ripe for further progress, the best thing to do is to wait quietly, without ulterior designs. If one acts thoughtlessly and tries to push ahead in opposition to fate, success will not be achieved."
                 }
             ]
         },
         "tags": [
             {"id": 1, "label":"Innocence"},
-            {"id": 2, "label":"Wu Wang"}
+            {"id": 2, "label":"Wu Wang"},
+            {"id": 3, "label":"Innately Good"},
+            {"id": 4, "label":"Belief in what's right"},
+            {"id": 5, "label":"Unexpected"},
+            {"id": 6, "label":"Pure Intentions"},
+            {"id": 7, "label":"Unintentional"},
+            {"id": 8, "label":"Integrity"},
+            {"id": 9, "label":"Pestilence"},
+            {"id": 10, "label":"Fidelity"}
         ]
     },
     {
@@ -1573,7 +1585,17 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Controlled Power"},
+            {"id": 2, "label":"Ta Chu"},
+            {"id": 3, "label":"Holding Back"},
+            {"id": 4, "label":"Storing Energy"},
+            {"id": 5, "label":"Latent Power"},
+            {"id": 6, "label":"Subtle Restraint"},
+            {"id": 7, "label":"Restraint"},
+            {"id": 8, "label":"Taming"},
+            {"id": 9, "label":"Refrain"},
+            {"id": 10, "label":"Learn from the Past"},
+            {"id": 11, "label":"Lessons of the past"}
         ]
     },
     {
