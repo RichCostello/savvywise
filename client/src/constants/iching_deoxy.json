@@ -1648,7 +1648,17 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Nourishment"},
+            {"id": 2, "label":"I"},
+            {"id": 3, "label":"Nuturing"},
+            {"id": 4, "label":"Temperate"},
+            {"id": 5, "label":"Cultivation"},
+            {"id": 6, "label":"Feed the Mind"},
+            {"id": 7, "label":"Watch your thoughts"},
+            {"id": 8, "label":"Enrich Character"},
+            {"id": 9, "label":"In Moderation"},
+            {"id": 10, "label":"Diet"},
+            {"id": 11, "label":"Thunder Beneath the Mountain"}  
         ]
     },
     {
@@ -1680,7 +1690,11 @@
                 },
                 {
                     "poem": "Nine in the second place means:\nA dry poplar sprouts at the root.\nAn older man takes a young wife.\nEverything furthers.",
-                    "expl": "Wood is near water; hence the image of an old poplar sprouting at the root. This means an extraordinary situation arises when an older man marries a young girl who suits him. Despite the unusualness of the situation, all goes well.  From the point of view of politics, the meaning is that in exceptional times one does well to join with the lowly, for this affords a possibility of renewal.\t\tNine in the third place means:\tThe ridgepole sags to the breaking point.\tMisfortune.\tThis indicates a type of man who in times of preponderance of the great insists on pushing ahead. He accepts no advice from others, and therefore they in turn are not willing to lend him support. Because of this the burden grows, until the structure of things bends or breaks. Plunging willfully ahead in times of danger only hastens the catastrophe."
+                    "expl": "Wood is near water; hence the image of an old poplar sprouting at the root. This means an extraordinary situation arises when an older man marries a young girl who suits him. Despite the unusualness of the situation, all goes well.  From the point of view of politics, the meaning is that in exceptional times one does well to join with the lowly, for this affords a possibility of renewal."
+                },
+                {
+                    "poem": "Nine in the third place means:\tThe ridgepole sags to the breaking point.\tMisfortune.",
+                    "expl": "This indicates a type of man who in times of preponderance of the great insists on pushing ahead. He accepts no advice from others, and therefore they in turn are not willing to lend him support. Because of this the burden grows, until the structure of things bends or breaks. Plunging willfully ahead in times of danger only hastens the catastrophe."
                 },
                 {
                     "poem": "Nine in the fourth place means:\nThe ridgepole is braced. Good fortune.\nIf there are ulterior motives, it is humiliating.",
@@ -1697,7 +1711,16 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Preponderance of the Great"},
+            {"id": 2, "label":"Ta Kuo"},
+            {"id": 3, "label":"Excessive Pressure"},
+            {"id": 4, "label":"About to Collapse"},
+            {"id": 5, "label":"Passing of Greatness"},
+            {"id": 6, "label":"Breaking Point"},
+            {"id": 7, "label":"Taking Action"},
+            {"id": 8, "label":"Leap of Faith"},
+            {"id": 9, "label":"Law of Karma"},
+            {"id": 10, "label":"Tipping Point"}
         ]
     },
     {
@@ -1750,7 +1773,18 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Abysmal"},
+            {"id": 2, "label":"Kǎn"},
+            {"id": 3, "label":"Danger"},
+            {"id": 4, "label":"The Deep"},
+            {"id": 5, "label":"Dark Forces"},
+            {"id": 6, "label":"Perilous"},
+            {"id": 7, "label":"Dark Thoughts"},
+            {"id": 8, "label":"Dangerous Depths"},
+            {"id": 9, "label":"Trial by Fire"},
+            {"id": 10, "label":"Abysmal"},
+            {"id": 12, "label":"Ravine"},
+            {"id": 12, "label":"Overcoming Hardship"}
         ]
     },
     {
@@ -1803,7 +1837,18 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Clinging"},
+            {"id": 2, "label":"Fire"},
+            {"id": 3, "label":"Li"},
+            {"id": 4, "label":"Clarity"},
+            {"id": 5, "label":"Radiance"},
+            {"id": 6, "label":"Synergy"},
+            {"id": 7, "label":"The Light"},
+            {"id": 8, "label":"Consciousness"},
+            {"id": 9, "label":"Lucidity"},
+            {"id": 10, "label":"Luminous"},
+            {"id": 11, "label":"Inner Freedom"},
+            {"id": 12, "label":"Cow"}
         ]
     },
     {
@@ -1856,7 +1901,18 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Influence"},
+            {"id": 2, "label":"Hsien"},
+            {"id": 3, "label":"Wooing"},
+            {"id": 4, "label":"Attraction"},
+            {"id": 5, "label":"Sensation"},
+            {"id": 6, "label":"Sensing"},
+            {"id": 7, "label":"Seeking Union"},
+            {"id": 8, "label":"Persuasion"},
+            {"id": 9, "label":"Courting Response"},
+            {"id": 10, "label":"Magnetic Attraction"},
+            {"id": 11, "label":"Adept"},
+            {"id": 12, "label":"Open Minded"}
         ]
     },
     {
@@ -1909,7 +1965,16 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Duration"},
+            {"id": 2, "label":"Hêng"},
+            {"id": 3, "label":"Constant"},
+            {"id": 4, "label":"Continuity"},
+            {"id": 5, "label":"Holding Firm"},
+            {"id": 6, "label":"Endurance"},
+            {"id": 7, "label":"Perseverance"},
+            {"id": 8, "label":"Long Lasting"},
+            {"id": 9, "label":"Stand Your Ground"},
+            {"id": 10, "label":"Successful Progress"}
         ]
     },
     {
@@ -1962,13 +2027,22 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Retreat"},
+            {"id": 2, "label":"Tun"},
+            {"id": 3, "label":"Withdraw"},
+            {"id": 4, "label":"Slow Down"},
+            {"id": 5, "label":"Let Go"},
+            {"id": 6, "label":"Yielding"},
+            {"id": 7, "label":"Inaccessibility"},
+            {"id": 8, "label":"Dark is Ascending"},
+            {"id": 9, "label":"Conserve Energy"},
+            {"id": 1, "label":"Ease Off"}
         ]
     },
     {
         "number": 34,
         "name": "Ta Chuang",
-        "description": "The Power of the Great",
+        "description": "Great Power",
         "trigrams": {
             "above": {
                 "title": "chên",
@@ -2015,7 +2089,18 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Great Power"},
+            {"id": 2, "label":"Ta Chuang"},
+            {"id": 3, "label":"Righteous Power"},
+            {"id": 4, "label":"Excessive Force"},
+            {"id": 5, "label":"Strength"},
+            {"id": 6, "label":"Invigorating"},
+            {"id": 7, "label":"Maturity"},
+            {"id": 8, "label":"Keep up the fight"},
+            {"id": 9, "label":"Vigorous"},
+            {"id": 10, "label":"Stamina"},
+            {"id": 11, "label":"Asserting Power"},
+            {"id": 11, "label":"with power comes great responsibility"}
         ]
     },
     {
@@ -2068,7 +2153,17 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Progress"},
+            {"id": 2, "label":"Chin"},
+            {"id": 3, "label":"Prospering"},
+            {"id": 4, "label":"Moving Forward"},
+            {"id": 5, "label":"Rapid Advancement"},
+            {"id": 6, "label":"To Advance"},
+            {"id": 7, "label":"Making Headway"},
+            {"id": 8, "label":"Progressing"},
+            {"id": 9, "label":"Widening Expansion"},
+            {"id": 10, "label":"Clarity"},
+            {"id": 10, "label":"Easy Progress"}
         ]
     },
     {
