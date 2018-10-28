@@ -2269,7 +2269,17 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"The Family"},
+            {"id": 2, "label":"Chia Jên"},
+            {"id": 3, "label":"Clan"},
+            {"id": 4, "label":"Psyche"},
+            {"id": 5, "label":"Home"},
+            {"id": 6, "label":"Extended Family"},
+            {"id": 7, "label":"Husband and Wife"},
+            {"id": 8, "label":"Household"},
+            {"id": 9, "label":"Family Values"},
+            {"id": 10, "label":"Family Ties"},
+            {"id": 11, "label":"Family is Everything"}
         ]
     },
     {
@@ -2322,7 +2332,17 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Opposition"},
+            {"id": 2, "label":"Kuei"},
+            {"id": 3, "label":"Estrangement"},
+            {"id": 4, "label":"Growing Apart"},
+            {"id": 5, "label":"Opposites"},
+            {"id": 6, "label":"Polarizing"},
+            {"id": 7, "label":"Alienation"},
+            {"id": 8, "label":"Separated"},
+            {"id": 9, "label":"Different Point of View"},
+            {"id": 10, "label":"Diverge"},
+            {"id": 11, "label":"Go Your Own Way"}
         ]
     },
     {
@@ -2375,7 +2395,16 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Obstruction"},
+            {"id": 2, "label":"Impass"},
+            {"id": 3, "label":"Obstacles"},
+            {"id": 4, "label":"Barriers"},
+            {"id": 5, "label":"Halting"},
+            {"id": 6, "label":"Sitting Tight"},
+            {"id": 7, "label":"Bottle Neck"},
+            {"id": 8, "label":"Setbacks"},
+            {"id": 9, "label":"Stumbling Block"},
+            {"id": 10, "label":"Roadblock"}
         ]
     },
     {
@@ -2428,7 +2457,16 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Deliverance"},
+            {"id": 2, "label":"Liberation"},
+            {"id": 3, "label":"Release"},
+            {"id": 4, "label":"Overcoming Obstacles"},
+            {"id": 5, "label":"Untangled"},
+            {"id": 6, "label":"Solution"},
+            {"id": 7, "label":"Clarity"},
+            {"id": 8, "label":"Storm has Passed"},
+            {"id": 9, "label":"Return to Normal"},
+            {"id": 10, "label":"Clean Sweep"}
         ]
     },
     {
@@ -2481,7 +2519,17 @@
             ]
         },
         "tags": [
-            {"id": 1, "label":""}
+            {"id": 1, "label":"Sun"},
+            {"id": 2, "label":"Decrease"},
+            {"id": 3, "label":"Loss"},
+            {"id": 4, "label":"Diminishing"},
+            {"id": 5, "label":"Reduction"},
+            {"id": 6, "label":"Decline"},
+            {"id": 7, "label":"Sacrifice"},
+            {"id": 8, "label":"Waning"},
+            {"id": 9, "label":"No Pain No Gain"},
+            {"id": 10, "label":"Sacrifice for greater good"},
+            {"id": 11, "label":"Self Restraint"}
         ]
     },
     {

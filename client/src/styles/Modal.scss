@@ -255,7 +255,8 @@ a.ui.large.basic.label.slabel--active {
     column-count: 2;
   }
   @media (max-width: 600px) {
-    column-count: 1;
+    /* column-count: 1; */
+    display: initial
   }
 }
 /* Masonry brick or child elements */

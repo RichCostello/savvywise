@@ -1,5 +1,7 @@
 View example here https://richcostello.github.io/savvywise
 
+yarn run dev  --  to start up app
+
 To Install depencies:   yarn install
 
 To start app:    yarn start
